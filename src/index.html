@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>test-task</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="payments">
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__list-item"></li>
+                    <li class="nav__list-item nav__list-item--active"></li>
+                    <li class="nav__list-item"></li>
+                    <li class="nav__list-item"></li>
+                </ul>
+            </nav>
+            <section class="main">
+                <div class="payments__info">
+                    <p class="payments__info-text"></p>
+                    <p class="payments__info__account"><span class="payments__info__account-numbers"></span></p>
+                    <p class="payments__info__amount"><span class="payments__info__amount-count"></span></p>
+                </div>
+                <h1 class="payments-headline"></h1>
+                    <form class="card">
+                        <div class="card__frontside">
+                            <label class="card__frontside-number">
+                               <div class="card__frontside-number__block">
+                                    <input type="number" class="card__frontside-number__block-value">
+                                    <input type="number" class="card__frontside-number__block-value">
+                                    <input type="number" class="card__frontside-number__block-value">
+                                    <input type="number" class="card__frontside-number__block-value">
+                               </div>
+                            </label>
+                            <label class="card__frontside-expiration-date">
+                                <select name="month" id="">
+                                    <option value="4">4</option>
+                                </select>
+                                <select name="year" id="">
+                                    <option value="2018">2018</option>
+                                </select>
+                            </label>
+                            <label class="card__frontside-owner">
+                                <textarea name="owner" id="" cols="30" rows="10" placeholder="Держатель карты"></textarea>
+                            </label>
+                        </div>
+                        <div class="card__backside">
+                            <div class="card__backside-tape"></div>
+                            <label class="card__backside__cvv">
+                                <input type="number">
+                            </label>
+                        </div>
+                        <button type="submit" id="submit" class="card-submit">Оплатить</button>
+                    </form>
+            </section>
+        </div>
+    </div>
+</body>
+</html>
