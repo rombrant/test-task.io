@@ -1,0 +1,20 @@
+$desktop: 1000px;
+$tablets: 720px;
+$phones: 320px;
+
+
+
+
+
+
+@import "./mixins/mixins.scss";
+
+@import "./layout/normalize.scss";
+
+@import "./media/media.scss";
+
+@import "./layout/base.scss";
+
+@import "./blocks/form.scss";
+
+@import "./fonts/fonts.scss";
