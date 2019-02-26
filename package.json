@@ -3,14 +3,19 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "dependencies": {},
+  "dependencies": {
+    "gulp": "^3.9.1"
+  },
   "devDependencies": {
+    "browser": "^0.2.6",
+    "browser-sync": "^2.26.3",
     "del": "^3.0.0",
     "gulp-autoprefixer": "^6.0.0",
     "gulp-sass": "^4.0.2",
     "gulp-watch": "^5.0.1",
     "node-sass": "^4.11.0",
-    "run-sequence": "^2.2.1"
+    "run-sequence": "^2.2.1",
+    "sync": "^0.2.5"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
