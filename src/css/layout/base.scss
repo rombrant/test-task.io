@@ -1,3 +1,4 @@
+// common styles
 * {
     padding: 0;
     margin: 0;
@@ -22,6 +23,7 @@ ul {
   ul li {
     list-style-type: none;
 }
+// wrapper styles
 .wrapper {
     margin: 0;
     padding: 0;
@@ -53,6 +55,7 @@ ul {
         max-width: 300px;
     }
 }
+//main content block styles
 .main {
     background-color: #f7f8f8;
     max-width: 70%;
@@ -62,6 +65,7 @@ ul {
         max-width: 100%;
     }
 }
+//footer styles
 .footer {
     padding: 1.8rem 3rem 1rem 2rem;
     text-align: start;
@@ -75,7 +79,4 @@ ul {
     @include tablets {
         font-size: 0.6rem;
     }
-}
-.quit {
-    color: #808592;
 }

@@ -1,3 +1,4 @@
+//card styles and common styles for blocks and elements form we needed
 .card {
     margin: 0 0 2rem 1.8rem;
     width: 96%;
@@ -10,7 +11,7 @@
     }
     @include newPhones {
         margin-left: 1rem;
-    }
+    }//common styles for both crads
     &__frontside, &__backside {
         width: 21.875rem;
         height: 14.75rem;
@@ -23,7 +24,7 @@
             width: 21rem;
             height: 14rem;
         }
-    }
+    }//individual style for frontside bank card
     &__frontside{
         background-color: #f7f8f8;
         position: absolute;
@@ -43,7 +44,7 @@
                 justify-content: space-between;
                 & input:invalid:not(:placeholder-shown) {
                     border-color: red;
-                }
+                }//inputs get styles according to psd maket
                 &-value {
                     padding-left: 0.3rem;
                     box-shadow: 0.01px 0 0 0.01px $support;
@@ -51,7 +52,7 @@
                     width: 4rem;
                     line-height: 2.5rem;
                     border: 1px solid #e4e9ee;
-                    
+                    //media
                     @include laptop {
                         line-height: 2rem;
                         font-size: 0.8rem;
@@ -61,7 +62,7 @@
                     }
                 }
             }
-        }
+        }//experation-date get styles according to psd maket
         &-expiration-date{
             width: 40%;
             line-height: 1.5rem;
@@ -124,7 +125,7 @@
                     }
                 }
             }
-        }
+        }//owner get styles according to psd maket
         &-owner{
             margin: 1rem;
             color: rgba(182, 174, 174, 0.4);
@@ -132,7 +133,6 @@
                 border-color: red;
             }
             &-value {
-                
                 padding-left: 0.3rem;
                 box-shadow: 0.01px 0 0 0.01px $support;
                 border-style: none;
@@ -148,7 +148,7 @@
                 }
             }
         }
-    }
+    }//backside bank card get styles according to psd maket
     &__backside {
         margin-left: 35%;
         margin-top: 1.2rem;
@@ -161,7 +161,7 @@
         }
         @include tablets {
             margin: 0;
-        }
+        }//type decor block
         &-tape {
             margin-top: 5%;
             width:100%;
@@ -218,7 +218,7 @@
             }
             
         }
-    }
+    }//submit button get styles according to psd maket
     &-submit {
         margin-left: 1.5rem;
         width: 8.3125rem;
@@ -228,7 +228,7 @@
         background-image: linear-gradient(#0059be, #004ca2);
         color: #ffffff;
     }
-}
+}//error styles for invalided input 
 .error {
     border: 1px solid red;
 }

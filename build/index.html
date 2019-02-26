@@ -8,8 +8,11 @@
     <title>test-task</title>
 </head>
 <body>
+    <!--враппер общая оболочка для страницы-->
     <div class="wrapper">
+        <!--главный блок страницы-->
         <div class="payments">
+            <!--navigation menu-->
             <nav class="nav">
                 <ul class="nav__list">
                     <li class="nav__list-item">Личный кабинет</li>
@@ -19,14 +22,19 @@
                     <li class="nav__list-item nav__list-item--quit">Выйти</li>
                 </ul>
             </nav>
+            <!--main content of the page-->
             <div class="main">
+                <!--payments info first block-->
                 <div class="payments__info">
                     <p class="payments__info-text">Информация по оплате:</p>
                     <p class="payments__info__account">Номер счета:<span class="payments__info__account-numbers">87123658716587</span></p>
                     <p class="payments__info__amount">Сумма платежа:<span class="payments__info__amount-count">100 руб.</span></p>
                 </div>
+                <!--headline page-->
                 <h1 class="payments-headline">Данные банковской карты</h1>
+                <!--form we needed-->
                 <form class="card" id="myForm">
+                    <!--card block required-->
                     <div class="card__frontside">
                         <label class="card__frontside-number" id="">Номер карты
                             <div class="card__frontside-number__block">
@@ -36,6 +44,7 @@
                                 <input minlength="4" maxlength="4" name="num" type="text" class="card__frontside-number__block-value" placeholder=" " required>
                             </div>
                         </label>
+                        <!--expiration date block required-->
                         <label class="card__frontside-expiration-date">Срок действия
                             <div class="card__frontside-expiration-date__block">
                                 <select name="month" id="" required>
@@ -63,12 +72,15 @@
                                 </select>
                             </div >
                         </label>
+                        <!--owner block required-->
                         <label class="card__frontside-owner">
                             <input minlength="4" name="owner" id="" placeholder="Держатель карты" class="card__frontside-owner-value" required></input>
                         </label>
                     </div>
+                    <!--card we needed backside-->
                     <div class="card__backside">
                         <div class="card__backside-tape"></div>
+                        <!--cvv code block required-->
                         <div class="card__backside__cvv">
                             <label class="card__backside__cvv-text">
                                     Код CVV2 / CVC2
@@ -76,8 +88,10 @@
                             </label>
                         </div>
                     </div>
+                    <!--submit button-->
                     <button type="submit" id="submit" class="card-submit">Оплатить</button>
                 </form>
+                <!--footer block-->
                 <div class="footer">Исходя из астатической системы координат Булгакова, соединение стабильно. Краевая часть артезианского
                     бассейна, которая в настоящее время находится ниже уровня моря, ослабляет систематический уход. 
                    Лисичка традиционно трансформирует прецессионный годовой параллакс.

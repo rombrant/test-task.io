@@ -1,21 +1,22 @@
+//media for laptop
 @mixin laptop {
     @media screen and (max-width: $laptop) {
       @content;
     }
   }
-
+//media for tablets
 @mixin tablets {
     @media screen and (max-width: $tablets) {
       @content;
     }
   }
-
+//media for newPhones
   @mixin newPhones {
     @media screen and (max-width: $newPhones) {
       @content;
     }
   }
-  
+//media for phones
   @mixin phones {
     @media screen and (max-width: $phones) {
       @content;

@@ -1,14 +1,15 @@
+//navigation menu styles
 .nav {
     max-width: 30%;
     @include newPhones {
         max-width: 100%;
     }
     &__list {
-        
+        //first element and third get another background by psd maket
         &-item {
             &:nth-child(1), &:nth-child(3) {
                 background-color: #1f2229;
-            }
+            } //common styles for items navigation menu
             color: #ffffff;
             font-family: ubunturegular;
             font-size: 1rem;
@@ -21,10 +22,10 @@
             }
             @include newPhones {
                 padding-left: 1rem;
-            }
+            }//styles for active menu an for quit
             &--active, &--quit {
                 color: #808592;
-            }
+            }//active link get another background by psd maket
             &--active{
                 background-color: #2a2d37;
             }

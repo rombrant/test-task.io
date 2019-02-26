@@ -380,9 +380,6 @@ ul li {
     .footer {
       font-size: 0.6rem; } }
 
-.quit {
-  color: #808592; }
-
 .nav {
   max-width: 30%; }
   @media screen and (max-width: 480px) {

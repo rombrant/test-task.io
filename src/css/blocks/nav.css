@@ -1,20 +1,21 @@
 /*
 Error: Undefined mixin 'newPhones'.
-        on line 3 of C:\Users\User\Desktop\test-task-repository\src\css\blocks\nav.scss, in `newPhones'
-        from line 3 of C:\Users\User\Desktop\test-task-repository\src\css\blocks\nav.scss
+        on line 4 of C:\Users\User\Desktop\test-task-repository\src\css\blocks\nav.scss, in `newPhones'
+        from line 4 of C:\Users\User\Desktop\test-task-repository\src\css\blocks\nav.scss
 
-1: .nav {
-2:     max-width: 30%;
-3:     @include newPhones {
-4:         max-width: 100%;
-5:     }
-6:     &__list {
-7:         
-8:         &-item {
+1: //navigation menu styles
+2: .nav {
+3:     max-width: 30%;
+4:     @include newPhones {
+5:         max-width: 100%;
+6:     }
+7:     &__list {
+8:         //first element and third get another background by psd maket
+9:         &-item {
 
 Backtrace:
-C:\Users\User\Desktop\test-task-repository\src\css\blocks\nav.scss:3:in `newPhones'
-C:\Users\User\Desktop\test-task-repository\src\css\blocks\nav.scss:3
+C:\Users\User\Desktop\test-task-repository\src\css\blocks\nav.scss:4:in `newPhones'
+C:\Users\User\Desktop\test-task-repository\src\css\blocks\nav.scss:4
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:352:in `block in visit_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `block in with_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
@@ -63,4 +64,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'newPhones'.\A         on line 3 of C:\Users\User\Desktop\test-task-repository\src\css\blocks\nav.scss, in `newPhones'\A         from line 3 of C:\Users\User\Desktop\test-task-repository\src\css\blocks\nav.scss\A \A 1: .nav {\A 2:     max-width: 30%;\A 3:     @include newPhones {\A 4:         max-width: 100%;\A 5:     }\A 6:     &__list {\A 7:         \A 8:         &-item {"; }
+  content: "Error: Undefined mixin 'newPhones'.\A         on line 4 of C:\Users\User\Desktop\test-task-repository\src\css\blocks\nav.scss, in `newPhones'\A         from line 4 of C:\Users\User\Desktop\test-task-repository\src\css\blocks\nav.scss\A \A 1: //navigation menu styles\A 2: .nav {\A 3:     max-width: 30%;\A 4:     @include newPhones {\A 5:         max-width: 100%;\A 6:     }\A 7:     &__list {\A 8:         //first element and third get another background by psd maket\A 9:         &-item {"; }
