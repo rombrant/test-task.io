@@ -11,12 +11,13 @@ for (const input of inputs) {
 $('.card__backside__cvv-text-value').keydown(function(event){
     validation(owner);
 });
-$(owner).keydown(function(event){
+$(owner).keydown(e =>{
     let isLat = false;
     let isControl = false;
-    if (event.keyCode>=65 && event.keyCode<=90) {
+    var re=new RegExp('^[a-zA-Z]+$');
+    if (re.test(event.key)) {
         isLat = true;
-        console.log(event.keyCode);
+        console.log(event.key);
     } 
     
     if (event.key == 'ArrowLeft' || event.key == 'ArrowRight' || event.key == 'Backspace') {
@@ -25,7 +26,7 @@ $(owner).keydown(function(event){
     }
     if (isLat == false && isControl == false) {
         event.preventDefault();
-        console.log(event.keyCode);
+        console.log(event.key);
     }
 });
 function validation() {
