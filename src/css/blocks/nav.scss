@@ -1,0 +1,14 @@
+.nav {
+    min-width: 30%;
+    &__list {
+        &-item {
+            color: #ffffff;
+            font-family: ubunturegular;
+            font-size: 0.8rem;
+            line-height: 1.5rem;
+            padding: 1rem 2rem;
+            background-color: #1f2229;
+            border-bottom: 1px solid #242730;
+        }
+    }
+}

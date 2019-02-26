@@ -1,21 +1,21 @@
 @font-face {
   font-family: 'ubuntubold';
-  src: url("./Ubuntu-B.ttf") format("TrueType");
+  src: url("/src/css/fonts/Ubuntu-B.ttf") format("TrueType");
   font-weight: normal;
   font-style: normal; }
 @font-face {
   font-family: 'ubuntulight';
-  src: url("./Ubuntu-Light.ttf") format("TrueType");
+  src: url("/src/css/fonts/Ubuntu-Light.ttf") format("TrueType");
   font-weight: normal;
   font-style: normal; }
 @font-face {
   font-family: 'ubuntumedium';
-  src: url("./Ubuntu-Medium.ttf") format("TrueType");
+  src: url("/src/css/fonts/Ubuntu-Medium.ttf") format("TrueType");
   font-weight: normal;
   font-style: normal; }
 @font-face {
   font-family: 'ubunturegular';
-  src: url("./Ubuntu-Regular.ttf") format("TrueType");
+  src: url("/src/css/fonts/Ubuntu-Regular.ttf") format("TrueType");
   font-weight: normal;
   font-style: normal; }
 

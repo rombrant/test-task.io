@@ -311,8 +311,7 @@ template {
 html, body {
   font-size: 16px;
   font-family: 'ubunturegular', sans-serif;
-  height: 100vh;
-  overflow: hidden; }
+  min-height: 100vh; }
   @media screen and (max-width: 720px) {
     html, body {
       font-size: 14px; } }
@@ -329,35 +328,167 @@ ul li {
 
 .wrapper {
   width: 100vw;
-  height: 100vh;
-  background-color: #101114; }
+  min-height: 100vh;
+  background-color: #101114;
+  box-sizing: content-box; }
 
 .payments {
+  padding: 2rem 0;
   margin: 0 auto;
-  max-width: 1000px; }
+  width: 100%;
+  height: 100%;
+  max-width: 1000px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; }
+
+.main {
+  background-color: #f7f8f8;
+  min-width: 70%;
+  height: 100%; }
 
 .footer {
-  margin: 0 auto;
-  max-width: 1000px; }
+  padding: 2rem 3rem 1rem 2rem;
+  text-align: start;
+  line-height: 1rem;
+  margin-left: 30%;
+  width: 70%;
+  max-height: 30%;
+  color: #93a1b5;
+  background-color: #373c43;
+  font-size: 0.7rem; }
+
+.nav {
+  min-width: 30%; }
+  .nav__list-item {
+    color: #ffffff;
+    font-family: ubunturegular;
+    font-size: 0.8rem;
+    line-height: 1.5rem;
+    padding: 1rem 2rem;
+    background-color: #1f2229;
+    border-bottom: 1px solid #242730; }
+
+.card {
+  margin: 0 0 2rem 1.8rem;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  color: #93a1b5; }
+  .card__frontside, .card__backside {
+    width: 21.875rem;
+    height: 14.75rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 0.8rem; }
+  .card__frontside {
+    background-color: #f7f8f8;
+    position: absolute;
+    box-shadow: 0px 0px 3px 0.1px #e4e9ee; }
+    .card__frontside-number {
+      margin-left: 1rem;
+      line-height: 1.5rem; }
+      .card__frontside-number__block {
+        width: 80%;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between; }
+        .card__frontside-number__block-value {
+          padding-left: 0.3rem;
+          box-shadow: 0.01px 0 0 0.01px #6a6e73;
+          border-style: none;
+          width: 3.5rem;
+          line-height: 2.5rem; }
+    .card__frontside-expiration-date {
+      line-height: 1.5rem;
+      margin-left: 1rem; }
+    .card__frontside-owner {
+      margin: 1rem;
+      color: rgba(182, 174, 174, 0.4); }
+      .card__frontside-owner input {
+        padding-left: 0.3rem;
+        box-shadow: 0.01px 0 0 0.01px #6a6e73;
+        border-style: none;
+        line-height: 2.5rem;
+        width: 85%; }
+  .card__backside {
+    margin-left: 35%;
+    margin-top: 1.2rem;
+    box-shadow: 0px 0px 3px 0.1px #e4e9ee;
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline; }
+    .card__backside-tape {
+      margin-top: 5%;
+      width: 100%;
+      height: 2rem;
+      background-color: #e4e9ee; }
+    .card__backside__cvv {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      margin-bottom: 30%; }
+      .card__backside__cvv-text {
+        margin-right: 1rem;
+        width: 38%;
+        line-height: 1.5rem; }
+        .card__backside__cvv-text input {
+          padding-left: 0.3rem;
+          box-shadow: 0.01px 0 0 0.01px #6a6e73;
+          border-style: none;
+          line-height: 2.5rem;
+          width: 100%; }
+  .card-submit {
+    width: 8.3125rem;
+    height: 2.5rem;
+    border-style: none;
+    border-radius: 2rem;
+    background-image: linear-gradient(#0059be, #004ca2);
+    color: #ffffff; }
+
+.payments__info {
+  padding: 1.8rem 0 0 1.8rem;
+  width: 60%;
+  color: #93a1b5;
+  line-height: 1.5rem; }
+  .payments__info__account, .payments__info__amount {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+  .payments__info__account-numbers, .payments__info__amount-count {
+    width: 50%;
+    text-align: start;
+    color: #6a6e73;
+    font-family: ubunturegular;
+    font-weight: 500; }
+
+.payments-headline {
+  margin: 0;
+  padding: 0 0 0 1.8rem;
+  color: #383d43;
+  font-size: 1.3rem;
+  line-height: 2.5rem; }
 
 @font-face {
   font-family: 'ubuntubold';
-  src: url("./Ubuntu-B.ttf") format("TrueType");
+  src: url("/src/css/fonts/Ubuntu-B.ttf") format("TrueType");
   font-weight: normal;
   font-style: normal; }
 @font-face {
   font-family: 'ubuntulight';
-  src: url("./Ubuntu-Light.ttf") format("TrueType");
+  src: url("/src/css/fonts/Ubuntu-Light.ttf") format("TrueType");
   font-weight: normal;
   font-style: normal; }
 @font-face {
   font-family: 'ubuntumedium';
-  src: url("./Ubuntu-Medium.ttf") format("TrueType");
+  src: url("/src/css/fonts/Ubuntu-Medium.ttf") format("TrueType");
   font-weight: normal;
   font-style: normal; }
 @font-face {
   font-family: 'ubunturegular';
-  src: url("./Ubuntu-Regular.ttf") format("TrueType");
+  src: url("/src/css/fonts/Ubuntu-Regular.ttf") format("TrueType");
   font-weight: normal;
   font-style: normal; }
 

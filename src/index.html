@@ -19,57 +19,62 @@
                     <li class="nav__list-item">Выйти</li>
                 </ul>
             </nav>
-            <section class="main">
+            <div class="main">
                 <div class="payments__info">
                     <p class="payments__info-text">Информация по оплате:</p>
                     <p class="payments__info__account">Номер счета:<span class="payments__info__account-numbers">87123658716587</span></p>
                     <p class="payments__info__amount">Сумма платежа:<span class="payments__info__amount-count">100 руб.</span></p>
                 </div>
                 <h1 class="payments-headline">Данные банковской карты</h1>
-                    <form class="card">
-                        <div class="card__frontside">
-                            <label class="card__frontside-number">Номер карты
-                               <div class="card__frontside-number__block">
-                                    <input type="number" class="card__frontside-number__block-value">
-                                    <input type="number" class="card__frontside-number__block-value">
-                                    <input type="number" class="card__frontside-number__block-value">
-                                    <input type="number" class="card__frontside-number__block-value">
-                               </div>
-                            </label>
-                            <label class="card__frontside-expiration-date">Срок действия
-                               <div class="card__frontside-expiration-date__block">
-                                    <select name="month" id="">
-                                        <option value="4">4</option>
-                                    </select>
-                                    <select name="year" id="">
-                                        <option value="2018">2018</option>
-                                    </select>
-                                </div >
-                            </label>
-                            <label class="card__frontside-owner">
-                                <textarea name="owner" id="" cols="30" rows="10" placeholder="Держатель карты"></textarea>
-                            </label>
-                        </div>
-                        <div class="card__backside">
-                            <div class="card__backside-tape"></div>
-                            <label class="card__backside__cvv">
+                <form class="card">
+                    <div class="card__frontside">
+                        <label class="card__frontside-number">Номер карты
+                            <div class="card__frontside-number__block">
+                                <input type="text" class="card__frontside-number__block-value">
+                                <input type="text" class="card__frontside-number__block-value">
+                                <input type="text" class="card__frontside-number__block-value">
+                                <input type="text" class="card__frontside-number__block-value">
+                            </div>
+                        </label>
+                        <label class="card__frontside-expiration-date">Срок действия
+                            <div class="card__frontside-expiration-date__block">
+                                <select name="month" id="">
+                                    <option value="4">4</option>
+                                </select>
+                                <select name="year" id="">
+                                    <option value="2018">2018</option>
+                                </select>
+                            </div >
+                        </label>
+                        <label class="card__frontside-owner">
+                            <input name="owner" id="" placeholder="Держатель карты"></input>
+                        </label>
+                    </div>
+                    <div class="card__backside">
+                        <div class="card__backside-tape"></div>
+                        <div class="card__backside__cvv">
+                            <label class="card__backside__cvv-text">
                                     Код CVV2 / CVC2
-                                <input type="number">
+                                <input type="text">
                             </label>
                         </div>
-                        <button type="submit" id="submit" class="card-submit">Оплатить</button>
-                    </form>
-            </section>
+                    </div>
+                    <button type="submit" id="submit" class="card-submit">Оплатить</button>
+                </form>
+            </div>
             <div class="footer">Исходя из астатической системы координат Булгакова, соединение стабильно. Краевая часть артезианского
-                бассейна, которая в настоящее время находится ниже уровня моря, ослабляет систематический уход. 
-               Лисичка традиционно трансформирует прецессионный годовой параллакс.
-               Выклинивание абсолютно аккумулирует твердый pадиотелескоп Максвелла.
-               Алмаз слагает горст. Делювий длительно колеблет лазерный подвижный объект.
-               Устойчивость, например, параллельна. Аргумент перигелия определяет боксит. Проекция вертикально дает уходящий диабаз. 
-               Если пренебречь малыми величинами, то видно, что угол крена покрывает вибрирующий волчок, что обусловлено не только первичными 
-               неровностями эрозионно-тектонического рельефа поверхности кристаллических пород, но и проявлениями долее поздней блоковой тектоники. 
-               Засветка неба заставляет иначе взглянуть на то, что такое волчок.</div>
-           </div>
+                    бассейна, которая в настоящее время находится ниже уровня моря, ослабляет систематический уход. 
+                   Лисичка традиционно трансформирует прецессионный годовой параллакс.
+                   <p style="height:1rem"></p>
+                   <p>Выклинивание абсолютно аккумулирует твердый pадиотелескоп Максвелла.</p> 
+                   <p style="height:1rem"></p>
+                   <p>Алмаз слагает горст. Делювий длительно колеблет лазерный подвижный объект.</p>
+                   <p style="height:1rem"></p>
+                   Устойчивость, например, параллельна. Аргумент перигелия определяет боксит. Проекция вертикально дает уходящий диабаз. 
+                   Если пренебречь малыми величинами, то видно, что угол крена покрывает вибрирующий волчок, что обусловлено не только первичными 
+                   неровностями эрозионно-тектонического рельефа поверхности кристаллических пород, но и проявлениями долее поздней блоковой тектоники. 
+                   Засветка неба заставляет иначе взглянуть на то, что такое волчок.</div>
+               </div>
         </div>
 </body>
 </html>
