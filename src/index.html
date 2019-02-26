@@ -16,7 +16,7 @@
                     <li class="nav__list-item nav__list-item--active">Платежи (активная)</li>
                     <li class="nav__list-item">История платежей</li>
                     <li class="nav__list-item">Настройки</li>
-                    <li class="nav__list-item">Выйти</li>
+                    <li class="nav__list-item nav__list-item--quit">Выйти</li>
                 </ul>
             </nav>
             <div class="main">
@@ -26,28 +26,45 @@
                     <p class="payments__info__amount">Сумма платежа:<span class="payments__info__amount-count">100 руб.</span></p>
                 </div>
                 <h1 class="payments-headline">Данные банковской карты</h1>
-                <form class="card">
+                <form class="card" id="myForm">
                     <div class="card__frontside">
-                        <label class="card__frontside-number">Номер карты
+                        <label class="card__frontside-number" id="">Номер карты
                             <div class="card__frontside-number__block">
-                                <input type="text" class="card__frontside-number__block-value">
-                                <input type="text" class="card__frontside-number__block-value">
-                                <input type="text" class="card__frontside-number__block-value">
-                                <input type="text" class="card__frontside-number__block-value">
+                                <input maxlength="4" name="num" type="text" class="card__frontside-number__block-value" required>
+                                <input maxlength="4" name="num" type="text" class="card__frontside-number__block-value" required>
+                                <input maxlength="4" name="num" type="text" class="card__frontside-number__block-value" required>
+                                <input maxlength="4" name="num" type="text" class="card__frontside-number__block-value" required>
                             </div>
                         </label>
                         <label class="card__frontside-expiration-date">Срок действия
                             <div class="card__frontside-expiration-date__block">
-                                <select name="month" id="">
+                                <select name="month" id="" required>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
                                     <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
                                 </select>
-                                <select name="year" id="">
+                                <select name="year" id="" required>
                                     <option value="2018">2018</option>
+                                    <option value="2019">2019</option>
+                                    <option value="2020">2020</option>
+                                    <option value="2021">2021</option>
+                                    <option value="2022">2022</option>
+                                    <option value="2023">2023</option>
+                                    <option value="2024">2024</option>
                                 </select>
                             </div >
                         </label>
                         <label class="card__frontside-owner">
-                            <input name="owner" id="" placeholder="Держатель карты"></input>
+                            <input minlength="4" name="owner" id="" placeholder="Держатель карты" class="card__frontside-owner-value" required></input>
                         </label>
                     </div>
                     <div class="card__backside">
@@ -55,7 +72,7 @@
                         <div class="card__backside__cvv">
                             <label class="card__backside__cvv-text">
                                     Код CVV2 / CVC2
-                                <input type="text">
+                                <input name="cvv" maxlength="3" type="text" class="card__backside__cvv-text-value" required>
                             </label>
                         </div>
                     </div>
@@ -76,5 +93,7 @@
                    Засветка неба заставляет иначе взглянуть на то, что такое волчок.</div>
                </div>
         </div>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script type="text/javascript" src="./js/main.js"></script>
 </body>
 </html>

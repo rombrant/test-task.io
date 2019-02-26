@@ -3,10 +3,16 @@
   .nav__list-item {
     color: #ffffff;
     font-family: ubunturegular;
-    font-size: 0.8rem;
+    font-size: 1rem;
     line-height: 1.5rem;
     padding: 1rem 2rem;
-    background-color: #1f2229;
+    background-color: #191c24;
     border-bottom: 1px solid #242730; }
+    .nav__list-item:nth-child(1), .nav__list-item:nth-child(3) {
+      background-color: #1f2229; }
+    .nav__list-item--active, .nav__list-item--quit {
+      color: #808592; }
+    .nav__list-item--active {
+      background-color: #2a2d37; }
 
 /*# sourceMappingURL=nav.css.map */

@@ -44,7 +44,7 @@ ul {
     height: 100%;
 }
 .footer {
-    padding: 2rem 3rem 1rem 2rem;
+    padding: 1.8rem 3rem 1rem 2rem;
     text-align: start;
     line-height: 1rem; 
     margin-left: 30%;
@@ -52,5 +52,8 @@ ul {
     max-height: 30%;
     color: $main;
     background-color: #373c43;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
+}
+.quit {
+    color: #808592;
 }

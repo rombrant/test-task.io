@@ -1,6 +1,6 @@
 .card {
     margin: 0 0 2rem 1.8rem;
-    width: 100%;
+    width: 96%;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -13,16 +13,18 @@
         flex-direction: column;
         justify-content: space-around;
         border-radius:  0.8rem;
+        border: 1px solid #e4e9ee;
     }
     &__frontside{
         background-color: #f7f8f8;
         position: absolute;
         box-shadow: 0px 0px 3px 0.1px #e4e9ee;
         &-number {
+            padding: 0.8rem 0 0 0;
             margin-left: 1rem;
-            line-height: 1.5rem;
+            line-height: 2rem;
             &__block {
-                width: 80%;
+                width: 90%;
                 display: flex;
                 flex-flow: row wrap;
                 justify-content: space-between;
@@ -30,14 +32,67 @@
                     padding-left: 0.3rem;
                     box-shadow: 0.01px 0 0 0.01px $support;
                     border-style: none;
-                    width: 3.5rem;
+                    width: 4rem;
                     line-height: 2.5rem;
+                    border: 1px solid #e4e9ee;
                 }
             }
         }
         &-expiration-date{
+            width: 40%;
             line-height: 1.5rem;
             margin-left: 1rem;
+            &__block {
+                position: relative;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                &::after{
+                    position: absolute;
+                    /* top: 3pt; Uncomment this to lower the icons as requested in comments*/
+                    content: "";
+                    display: inline-block;
+                    /* By using an em scale, the arrows will size with the font */
+                    width: 0.6em;
+                    height: 0.5em;
+                    top: 30%;
+                    left: 34%;
+                    border-right: 0.13em solid #e4e9ee;
+                    border-top: 0.13em solid #e4e9ee;
+                    transform: rotate(-225deg);
+                    margin-right: 0.5em;
+                    background-color: #ffffff;
+                }
+                &::before{
+                    position: absolute;
+                    /* top: 3pt; Uncomment this to lower the icons as requested in comments*/
+                    content: "";
+                    display: inline-block;
+                    /* By using an em scale, the arrows will size with the font */
+                    width: 0.6em;
+                    height: 0.5em;
+                    top: 30%;
+                    left: 87%;
+                    border-right: 0.13em solid #e4e9ee;
+                    border-top: 0.13em solid #e4e9ee;
+                    transform: rotate(-225deg);
+                    margin-right: 0.5em;
+                    background-color: #ffffff;
+                }
+                & select, & option {
+                    padding-left: 0.3rem;
+                    color: $support;
+                    border: 1px solid #e4e9ee;
+                    width: 4rem;
+                    height: 2.5rem;
+                   
+                }
+                & select {
+                    &:last-child {
+                        width: 4.5rem;
+                    }
+                }
+            }
         }
         &-owner{
             margin: 1rem;
@@ -47,7 +102,8 @@
                 box-shadow: 0.01px 0 0 0.01px $support;
                 border-style: none;
                 line-height: 2.5rem;
-                width: 85%;
+                width: 95%;
+                border: 1px solid #e4e9ee;
             }
         }
     }
@@ -61,30 +117,47 @@
         &-tape {
             margin-top: 5%;
             width:100%;
-            height: 2rem;
+            height: 2.5rem;
             background-color: #e4e9ee;
         }
         &__cvv {
             display: flex;
             flex-direction: row;
             justify-content: flex-end;
-            margin-bottom: 30%;
+            margin-bottom: 25%;
             &-text {
+                position: relative;
                 margin-right: 1rem;
                 width: 38%;
                 line-height: 1.5rem;
+                &::before {
+                    position: absolute;
+                    display: block;
+                    content: '?';
+                    top: 50%;
+                    left: 70%;
+                    width: 1.5rem;
+                    height: 1rem;
+                    border-radius: 50%;
+                    color: #e4e9ee;
+                    border: 1px solid #e4e9ee;
+                    text-align: center;
+                    padding-bottom: 7px;
+                }
                 & input {
                     padding-left: 0.3rem;
                     box-shadow: 0.01px 0 0 0.01px $support;
                     border-style: none;
                     line-height: 2.5rem;
                     width: 100%;
+                    border: 1px solid #e4e9ee;
                 }
             }
             
         }
     }
     &-submit {
+        margin-left: 1.5rem;
         width: 8.3125rem;
         height: 2.5rem;
         border-style: none; 

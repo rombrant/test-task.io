@@ -1,12 +1,14 @@
 .payments__info{
-    padding: 1.8rem 0 0 1.8rem;
+    padding: 2.8rem 0 0 1.8rem;
     width: 60%;
     color: $main;
-    line-height: 1.5rem;
+    line-height: 3rem;
     &__account, &__amount {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        line-height: 1.5rem;
+        letter-spacing: -0.6px;
     }
     &__account-numbers, &__amount-count{
         width: 50%;
@@ -18,7 +20,7 @@
 }
 .payments-headline {
     margin: 0;
-    padding: 0 0 0 1.8rem;
+    padding: 1rem 0 1rem 1.8rem;
     color: #383d43;
     font-size: 1.3rem;
     line-height: 2.5rem;
