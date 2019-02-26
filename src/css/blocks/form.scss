@@ -41,6 +41,9 @@
                 display: flex;
                 flex-flow: row wrap;
                 justify-content: space-between;
+                & input:invalid:not(:placeholder-shown) {
+                    border-color: red;
+                }
                 &-value {
                     padding-left: 0.3rem;
                     box-shadow: 0.01px 0 0 0.01px $support;
@@ -48,6 +51,7 @@
                     width: 4rem;
                     line-height: 2.5rem;
                     border: 1px solid #e4e9ee;
+                    
                     @include laptop {
                         line-height: 2rem;
                         font-size: 0.8rem;
@@ -124,7 +128,11 @@
         &-owner{
             margin: 1rem;
             color: rgba(182, 174, 174, 0.4);
-            & input {
+            & input:invalid:not(:placeholder-shown) {
+                border-color: red;
+            }
+            &-value {
+                
                 padding-left: 0.3rem;
                 box-shadow: 0.01px 0 0 0.01px $support;
                 border-style: none;
@@ -193,7 +201,10 @@
                     text-align: center;
                     padding-bottom: 7px;
                 }
-                & input {
+                & input:invalid:not(:placeholder-shown) {
+                    border-color: red;
+                }
+                &-value {
                     padding-left: 0.3rem;
                     box-shadow: 0.01px 0 0 0.01px $support;
                     border-style: none;
@@ -217,4 +228,7 @@
         background-image: linear-gradient(#0059be, #004ca2);
         color: #ffffff;
     }
+}
+.error {
+    border: 1px solid red;
 }

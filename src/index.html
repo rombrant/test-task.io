@@ -30,10 +30,10 @@
                     <div class="card__frontside">
                         <label class="card__frontside-number" id="">Номер карты
                             <div class="card__frontside-number__block">
-                                <input maxlength="4" name="num" type="text" class="card__frontside-number__block-value" required>
-                                <input maxlength="4" name="num" type="text" class="card__frontside-number__block-value" required>
-                                <input maxlength="4" name="num" type="text" class="card__frontside-number__block-value" required>
-                                <input maxlength="4" name="num" type="text" class="card__frontside-number__block-value" required>
+                                <input minlength="4" maxlength="4" name="num" type="text" class="card__frontside-number__block-value" placeholder=" " required>
+                                <input minlength="4" maxlength="4" name="num" type="text" class="card__frontside-number__block-value" placeholder=" " required>
+                                <input minlength="4" maxlength="4" name="num" type="text" class="card__frontside-number__block-value" placeholder=" " required>
+                                <input minlength="4" maxlength="4" name="num" type="text" class="card__frontside-number__block-value" placeholder=" " required>
                             </div>
                         </label>
                         <label class="card__frontside-expiration-date">Срок действия
@@ -72,7 +72,7 @@
                         <div class="card__backside__cvv">
                             <label class="card__backside__cvv-text">
                                     Код CVV2 / CVC2
-                                <input name="cvv" maxlength="3" type="text" class="card__backside__cvv-text-value" required>
+                                <input minlength="3" name="cvv" maxlength="3" type="text" class="card__backside__cvv-text-value" placeholder=" " required>
                             </label>
                         </div>
                     </div>
