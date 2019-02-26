@@ -327,6 +327,8 @@ ul li {
   list-style-type: none; }
 
 .wrapper {
+  margin: 0;
+  padding: 0;
   width: 100vw;
   min-height: 100vh;
   background-color: #101114;
@@ -341,28 +343,51 @@ ul li {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap; }
+  @media screen and (max-width: 850px) {
+    .payments {
+      max-width: 720px; } }
+  @media screen and (max-width: 720px) {
+    .payments {
+      max-width: 700px; } }
+  @media screen and (max-width: 480px) {
+    .payments {
+      max-width: 450px;
+      flex-direction: column; } }
+  @media screen and (max-width: 320px) {
+    .payments {
+      max-width: 300px; } }
 
 .main {
   background-color: #f7f8f8;
-  min-width: 70%;
+  max-width: 70%;
+  width: 100%;
   height: 100%; }
+  @media screen and (max-width: 480px) {
+    .main {
+      max-width: 100%; } }
 
 .footer {
   padding: 1.8rem 3rem 1rem 2rem;
   text-align: start;
   line-height: 1rem;
-  margin-left: 30%;
-  width: 70%;
-  max-height: 30%;
   color: #93a1b5;
   background-color: #373c43;
   font-size: 0.8rem; }
+  @media screen and (max-width: 850px) {
+    .footer {
+      font-size: 0.7rem; } }
+  @media screen and (max-width: 720px) {
+    .footer {
+      font-size: 0.6rem; } }
 
 .quit {
   color: #808592; }
 
 .nav {
-  min-width: 30%; }
+  max-width: 30%; }
+  @media screen and (max-width: 480px) {
+    .nav {
+      max-width: 100%; } }
   .nav__list-item {
     color: #ffffff;
     font-family: ubunturegular;
@@ -373,6 +398,12 @@ ul li {
     border-bottom: 1px solid #242730; }
     .nav__list-item:nth-child(1), .nav__list-item:nth-child(3) {
       background-color: #1f2229; }
+    @media screen and (max-width: 720px) {
+      .nav__list-item {
+        font-size: 0.85rem; } }
+    @media screen and (max-width: 480px) {
+      .nav__list-item {
+        padding-left: 1rem; } }
     .nav__list-item--active, .nav__list-item--quit {
       color: #808592; }
     .nav__list-item--active {
@@ -385,6 +416,12 @@ ul li {
   display: flex;
   flex-direction: column;
   color: #93a1b5; }
+  @media screen and (max-width: 850px) {
+    .card {
+      width: 95%; } }
+  @media screen and (max-width: 480px) {
+    .card {
+      margin-left: 1rem; } }
   .card__frontside, .card__backside {
     width: 21.875rem;
     height: 14.75rem;
@@ -393,10 +430,18 @@ ul li {
     justify-content: space-around;
     border-radius: 0.8rem;
     border: 1px solid #e4e9ee; }
+    @media screen and (max-width: 720px) {
+      .card__frontside, .card__backside {
+        width: 21rem;
+        height: 14rem; } }
   .card__frontside {
     background-color: #f7f8f8;
     position: absolute;
     box-shadow: 0px 0px 3px 0.1px #e4e9ee; }
+    @media screen and (max-width: 720px) {
+      .card__frontside {
+        margin: 0;
+        position: static; } }
     .card__frontside-number {
       padding: 0.8rem 0 0 0;
       margin-left: 1rem;
@@ -413,6 +458,13 @@ ul li {
           width: 4rem;
           line-height: 2.5rem;
           border: 1px solid #e4e9ee; }
+          @media screen and (max-width: 850px) {
+            .card__frontside-number__block-value {
+              line-height: 2rem;
+              font-size: 0.8rem; } }
+          @media screen and (max-width: 720px) {
+            .card__frontside-number__block-value {
+              font-size: .7rem; } }
     .card__frontside-expiration-date {
       width: 40%;
       line-height: 1.5rem;
@@ -458,6 +510,13 @@ ul li {
           border: 1px solid #e4e9ee;
           width: 4rem;
           height: 2.5rem; }
+          @media screen and (max-width: 850px) {
+            .card__frontside-expiration-date__block select, .card__frontside-expiration-date__block option {
+              line-height: 2rem;
+              font-size: 0.8rem; } }
+          @media screen and (max-width: 720px) {
+            .card__frontside-expiration-date__block select, .card__frontside-expiration-date__block option {
+              font-size: .7rem; } }
         .card__frontside-expiration-date__block select:last-child {
           width: 4.5rem; }
     .card__frontside-owner {
@@ -470,6 +529,13 @@ ul li {
         line-height: 2.5rem;
         width: 95%;
         border: 1px solid #e4e9ee; }
+        @media screen and (max-width: 850px) {
+          .card__frontside-owner input {
+            line-height: 2rem;
+            font-size: 0.8rem; } }
+        @media screen and (max-width: 720px) {
+          .card__frontside-owner input {
+            font-size: .7rem; } }
   .card__backside {
     margin-left: 35%;
     margin-top: 1.2rem;
@@ -477,6 +543,12 @@ ul li {
     display: flex;
     flex-direction: column;
     justify-content: baseline; }
+    @media screen and (max-width: 850px) {
+      .card__backside {
+        margin-left: 23%; } }
+    @media screen and (max-width: 720px) {
+      .card__backside {
+        margin: 0; } }
     .card__backside-tape {
       margin-top: 5%;
       width: 100%;
@@ -492,6 +564,15 @@ ul li {
         margin-right: 1rem;
         width: 38%;
         line-height: 1.5rem; }
+        @media screen and (max-width: 850px) {
+          .card__backside__cvv-text {
+            width: 28%;
+            font-size: 0.75rem;
+            margin-right: 0.5rem;
+            letter-spacing: 0; } }
+        @media screen and (max-width: 720px) {
+          .card__backside__cvv-text {
+            font-size: .7rem; } }
         .card__backside__cvv-text::before {
           position: absolute;
           display: block;
@@ -512,6 +593,9 @@ ul li {
           line-height: 2.5rem;
           width: 100%;
           border: 1px solid #e4e9ee; }
+          @media screen and (max-width: 850px) {
+            .card__backside__cvv-text input {
+              line-height: 2rem; } }
   .card-submit {
     margin-left: 1.5rem;
     width: 8.3125rem;
@@ -526,12 +610,22 @@ ul li {
   width: 60%;
   color: #93a1b5;
   line-height: 3rem; }
+  @media screen and (max-width: 480px) {
+    .payments__info {
+      font-size: 1rem;
+      padding-left: 1rem; } }
   .payments__info__account, .payments__info__amount {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     line-height: 1.5rem;
     letter-spacing: -0.6px; }
+    @media screen and (max-width: 720px) {
+      .payments__info__account, .payments__info__amount {
+        font-size: 0.8rem; } }
+    @media screen and (max-width: 480px) {
+      .payments__info__account, .payments__info__amount {
+        font-size: 0.75rem; } }
   .payments__info__account-numbers, .payments__info__amount-count {
     width: 50%;
     text-align: start;
@@ -545,6 +639,9 @@ ul li {
   color: #383d43;
   font-size: 1.3rem;
   line-height: 2.5rem; }
+  @media screen and (max-width: 480px) {
+    .payments-headline {
+      padding-left: 1rem; } }
 
 @font-face {
   font-family: 'ubuntubold';

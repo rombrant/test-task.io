@@ -23,6 +23,8 @@ ul {
     list-style-type: none;
 }
 .wrapper {
+    margin: 0;
+    padding: 0;
     width: 100vw;
     min-height: 100vh;
     background-color: #101114;
@@ -37,22 +39,42 @@ ul {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    @include laptop {
+        max-width: 720px;
+    }
+    @include tablets {
+        max-width: 700px;
+    }
+    @include newPhones {
+        max-width: 450px;
+        flex-direction: column;
+    }
+    @include phones {
+        max-width: 300px;
+    }
 }
 .main {
     background-color: #f7f8f8;
-    min-width: 70%;
+    max-width: 70%;
+    width: 100%;
     height: 100%;
+    @include newPhones {
+        max-width: 100%;
+    }
 }
 .footer {
     padding: 1.8rem 3rem 1rem 2rem;
     text-align: start;
     line-height: 1rem; 
-    margin-left: 30%;
-    width: 70%;
-    max-height: 30%;
     color: $main;
     background-color: #373c43;
     font-size: 0.8rem;
+    @include laptop {
+        font-size: 0.7rem;
+    }
+    @include tablets {
+        font-size: 0.6rem;
+    }
 }
 .quit {
     color: #808592;

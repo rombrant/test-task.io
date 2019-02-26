@@ -5,7 +5,12 @@
     display: flex;
     flex-direction: column;
     color: $main;
-
+    @include laptop {
+        width: 95%;
+    }
+    @include newPhones {
+        margin-left: 1rem;
+    }
     &__frontside, &__backside {
         width: 21.875rem;
         height: 14.75rem;
@@ -14,11 +19,19 @@
         justify-content: space-around;
         border-radius:  0.8rem;
         border: 1px solid #e4e9ee;
+        @include tablets {
+            width: 21rem;
+            height: 14rem;
+        }
     }
     &__frontside{
         background-color: #f7f8f8;
         position: absolute;
         box-shadow: 0px 0px 3px 0.1px #e4e9ee;
+        @include tablets {
+            margin: 0;
+            position: static;
+        }
         &-number {
             padding: 0.8rem 0 0 0;
             margin-left: 1rem;
@@ -35,6 +48,13 @@
                     width: 4rem;
                     line-height: 2.5rem;
                     border: 1px solid #e4e9ee;
+                    @include laptop {
+                        line-height: 2rem;
+                        font-size: 0.8rem;
+                    }
+                    @include tablets {
+                        font-size: .7rem;
+                    }
                 }
             }
         }
@@ -85,6 +105,13 @@
                     border: 1px solid #e4e9ee;
                     width: 4rem;
                     height: 2.5rem;
+                    @include laptop {
+                        line-height: 2rem;
+                        font-size: 0.8rem;
+                    }
+                    @include tablets {
+                        font-size: .7rem;
+                    }
                    
                 }
                 & select {
@@ -104,6 +131,13 @@
                 line-height: 2.5rem;
                 width: 95%;
                 border: 1px solid #e4e9ee;
+                @include laptop {
+                    line-height: 2rem;
+                    font-size: 0.8rem;
+                }
+                @include tablets {
+                    font-size: .7rem;
+                }
             }
         }
     }
@@ -114,6 +148,12 @@
         display: flex;
         flex-direction: column;
         justify-content: baseline;
+        @include laptop {
+            margin-left: 23%;
+        }
+        @include tablets {
+            margin: 0;
+        }
         &-tape {
             margin-top: 5%;
             width:100%;
@@ -130,6 +170,15 @@
                 margin-right: 1rem;
                 width: 38%;
                 line-height: 1.5rem;
+                @include laptop {
+                    width: 28%;
+                    font-size: 0.75rem;
+                    margin-right: 0.5rem;
+                    letter-spacing: 0;
+                }
+                @include tablets {
+                    font-size: .7rem;
+                }
                 &::before {
                     position: absolute;
                     display: block;
@@ -151,6 +200,9 @@
                     line-height: 2.5rem;
                     width: 100%;
                     border: 1px solid #e4e9ee;
+                    @include laptop {
+                        line-height: 2rem;
+                    }
                 }
             }
             

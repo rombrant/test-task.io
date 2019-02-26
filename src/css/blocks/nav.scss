@@ -1,5 +1,8 @@
 .nav {
-    min-width: 30%;
+    max-width: 30%;
+    @include newPhones {
+        max-width: 100%;
+    }
     &__list {
         
         &-item {
@@ -13,6 +16,12 @@
             padding: 1rem 2rem;
             background-color: #191c24;
             border-bottom: 1px solid #242730;
+            @include tablets {
+                font-size: 0.85rem;
+            }
+            @include newPhones {
+                padding-left: 1rem;
+            }
             &--active, &--quit {
                 color: #808592;
             }

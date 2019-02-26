@@ -3,12 +3,22 @@
     width: 60%;
     color: $main;
     line-height: 3rem;
+    @include newPhones {
+        font-size: 1rem;
+        padding-left: 1rem
+    }
     &__account, &__amount {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         line-height: 1.5rem;
         letter-spacing: -0.6px;
+        @include tablets {
+            font-size: 0.8rem;
+        }
+        @include newPhones {
+            font-size: 0.75rem;
+        }
     }
     &__account-numbers, &__amount-count{
         width: 50%;
@@ -24,4 +34,7 @@
     color: #383d43;
     font-size: 1.3rem;
     line-height: 2.5rem;
+    @include newPhones {
+        padding-left: 1rem;
+    }
 }

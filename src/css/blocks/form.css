@@ -8,11 +8,11 @@ Error: Undefined variable: "$main".
 5:     display: flex;
 6:     flex-direction: column;
 7:     color: $main;
-8: 
-9:     &__frontside, &__backside {
-10:         width: 21.875rem;
-11:         height: 14.75rem;
-12:         display: flex;
+8:     @include laptop {
+9:         width: 95%;
+10:     }
+11:     @include newPhones {
+12:         margin-left: 1rem;
 
 Backtrace:
 C:\Users\User\Desktop\test-task-repository\src\css\blocks\form.scss:7
@@ -62,4 +62,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$main\".\A         on line 7 of C:\Users\User\Desktop\test-task-repository\src\css\blocks\form.scss\A \A 2:     margin: 0 0 2rem 1.8rem;\A 3:     width: 96%;\A 4:     height: 100%;\A 5:     display: flex;\A 6:     flex-direction: column;\A 7:     color: $main;\A 8: \A 9:     &__frontside, &__backside {\A 10:         width: 21.875rem;\A 11:         height: 14.75rem;\A 12:         display: flex;"; }
+  content: "Error: Undefined variable: \"$main\".\A         on line 7 of C:\Users\User\Desktop\test-task-repository\src\css\blocks\form.scss\A \A 2:     margin: 0 0 2rem 1.8rem;\A 3:     width: 96%;\A 4:     height: 100%;\A 5:     display: flex;\A 6:     flex-direction: column;\A 7:     color: $main;\A 8:     @include laptop {\A 9:         width: 95%;\A 10:     }\A 11:     @include newPhones {\A 12:         margin-left: 1rem;"; }

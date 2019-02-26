@@ -7,10 +7,10 @@ Error: Undefined variable: "$main".
 3:     width: 60%;
 4:     color: $main;
 5:     line-height: 3rem;
-6:     &__account, &__amount {
-7:         display: flex;
-8:         flex-direction: row;
-9:         justify-content: space-between;
+6:     @include newPhones {
+7:         font-size: 1rem;
+8:         padding-left: 1rem
+9:     }
 
 Backtrace:
 C:\Users\User\Desktop\test-task-repository\src\css\blocks\payments.scss:4
@@ -60,4 +60,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$main\".\A         on line 4 of C:\Users\User\Desktop\test-task-repository\src\css\blocks\payments.scss\A \A 1: .payments__info{\A 2:     padding: 2.8rem 0 0 1.8rem;\A 3:     width: 60%;\A 4:     color: $main;\A 5:     line-height: 3rem;\A 6:     &__account, &__amount {\A 7:         display: flex;\A 8:         flex-direction: row;\A 9:         justify-content: space-between;"; }
+  content: "Error: Undefined variable: \"$main\".\A         on line 4 of C:\Users\User\Desktop\test-task-repository\src\css\blocks\payments.scss\A \A 1: .payments__info{\A 2:     padding: 2.8rem 0 0 1.8rem;\A 3:     width: 60%;\A 4:     color: $main;\A 5:     line-height: 3rem;\A 6:     @include newPhones {\A 7:         font-size: 1rem;\A 8:         padding-left: 1rem\A 9:     }"; }
